@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JS CRUD</title>
+</head>
+<body>
+    <h1>JS CRUD</h1>
+    <h1>두번째 h1 태그</h1>
+
+    <div>
+        <input type="text" id="item-input" placeholder="to-do 리스트"/>
+        <button onclick="addItem()">입력완료</button>
+    </div>
+    
+    <!-- id는 유일, class는 중복 가능 -->
+    <ul id="my-list"> 
+        <li class="list-item" id="first-item" onclick="handleSingleClick(this)">첫번째 내용</li>
+        <li class="list-item" id="second-item" onclick="handleSingleClick(this)">두번째 내용</li>
+        <li class="list-item"id="third-item" onclick="handleSingleClick(this)">세번째 내용</li>
+    </ul>
+    <!-- <button onclick="handleClick()">버튼</button> -->
+    <script src="index.js"></script>
+</body>
+</html>
